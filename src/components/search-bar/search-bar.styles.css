@@ -1,0 +1,11 @@
+.search-bar {
+    width: 20%;
+}
+
+.search-submit {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 25px;
+}

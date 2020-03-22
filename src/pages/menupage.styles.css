@@ -1,0 +1,46 @@
+.main-menu-box {
+    color: white;
+}
+
+.break-line {
+    border-color: rgb(189, 189, 189);
+    width: 30%;
+    margin: 30px auto 0 auto;
+    
+}
+
+.temp-label {
+    margin-right: 20px;
+}
+
+.temp-type-radio {
+    transform: scale(2);
+    margin-right: 30px;
+    
+  
+}
+
+.temp-container {
+    width: 30%;
+    margin: 30px auto 0 auto ;
+    
+    
+}
+
+.search-btn{
+    width: 20%;
+    border-radius: 5px;
+    border: rgba(189, 189, 189) 2px solid;
+    padding: 10px;
+    margin: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.search-btn:hover {
+    background-color: rgba(128, 128, 128, 0.836);
+    font-weight: bold;
+}
+
