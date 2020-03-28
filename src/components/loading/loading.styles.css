@@ -1,11 +1,14 @@
 .Loader {
   
-    height: 100vh;
+    height: 100%;
     width: 100%;    
   }
   
   .loader-center {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 40px);
   }
+
+
+  

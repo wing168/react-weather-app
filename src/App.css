@@ -8,7 +8,9 @@
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(to bottom left, rgb(0, 118, 253), rgb(157, 232, 255));
+  font-family: 'Heebo', sans-serif;
+  font-weight: 100;
 }
 

@@ -21,7 +21,10 @@ class App extends React.Component {
   }
 
    currentWeather = async () => {
-    this.setState({mainMenu: false})    
+    this.setState({
+      mainMenu: false,
+      loading: true
+    })    
     const data = await getWeatherDataCurrLoc();
     this.setState({
       currweatherdata: data[0],

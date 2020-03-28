@@ -24,23 +24,23 @@ const MainWeather = (props) => {
     
     return (
         <div className = 'container-fluid mt-2 current-weather'>
-            <div className = 'location display-4 mb-4'>{city}, {country}</div>
+            <div className = 'location mb-4'>{city}, {country}</div>
             <div className = 'd-flex justify-content-center align-items-center'>
                 <div className = 'mr-4 logo'><i className={`wi wi-owm-${icon} my-auto`}></i></div>
                 <div className = 'temp ml-4'>{isCelsius ? Math.round(temp) : Math.round(temp_F)}&deg;</div>
             </div>
             
-            <div className='description display-4'>{description}</div>
+            <div className='description'>{description}</div>
 
             <div className = 'd-flex justify-content-center align-items-center'>
-                <div className = 'min m-3'>Min: {isCelsius ? Math.round(temp_min) : Math.round(temp_min_F)}&deg;</div>
-                <div className = 'max m-3'>Max: {isCelsius ? Math.round(temp_max) : Math.round(temp_max_F)}&deg;</div>
-                <div className = 'wind m-3'>Wind: <i className={`wi wi-wind from-${deg}-deg wind-logo`}></i> {Math.round(speed *(1609/3600))} mph</div> {/* converting m/s to mph */}
+                <div className = 'min m-3 stats'>Min: {isCelsius ? Math.round(temp_min) : Math.round(temp_min_F)}&deg;</div>
+                <div className = 'max m-3 stats'>Max: {isCelsius ? Math.round(temp_max) : Math.round(temp_max_F)}&deg;</div>
+                <div className = 'wind m-3 stats'>Wind: <i className={`wi wi-wind from-${deg}-deg wind-logo`}></i> {Math.round(speed *(1609/3600))} mph</div> {/* converting m/s to mph */}
             </div>
             <div className = 'd-flex justify-content-center align-items-center'>
-                <div className = 'humidity m-3'>Humidity: {humidity}%</div>
-                <div className = 'pressure m-3'>Pressure: {pressure} mb</div>
-                <div className = 'visibility m-3'>Visibility: {(visibility/1609).toFixed(1)} mi</div> {/*convert to miles from metres */}
+                <div className = 'humidity m-3 stats'>Humidity: {humidity}%</div>
+                <div className = 'pressure m-3 stats'>Pressure: {pressure} mb</div>
+                <div className = 'visibility m-3 stats'>Visibility: {(visibility/1609).toFixed(1)} mi</div> {/*convert to miles from metres */}
             </div>
         </div> 
     )

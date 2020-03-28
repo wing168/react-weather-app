@@ -2,3 +2,30 @@
     font-size: 30px;
     margin: 20px;
   }
+
+  .five-day-cards {
+    margin: 50px;
+  }
+
+
+  /* Media queries */
+
+  
+  @media screen and (max-width: 1024px) {
+    .five-day-cards {
+      margin: 35px;
+    }
+  }
+
+  @media screen and (max-width: 578px) {
+
+    .five-day-cards {
+      margin: 5px;
+      font-size: 15px;
+    }
+
+    .logo-sm {
+      font-size: 15px;
+    }
+
+  }

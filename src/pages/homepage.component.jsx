@@ -22,7 +22,7 @@ const HomePage = (props) => {
             
             {loading ? <Loading /> : <MainWeather {...currweatherdata} isCelsius={isCelsius} /> }
             <div className = 'container-fluid mt-5 d-flex justify-content-center fiveday'>
-                {data5days.map((data, index) => <FiveDayWeather key={index} {...data} isCelsius={isCelsius} />)}
+                {loading ? null : data5days.map((data, index) => <FiveDayWeather key={index} {...data} isCelsius={isCelsius} />)}
             </div>
             
         </div>

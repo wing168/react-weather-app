@@ -5,6 +5,11 @@
   .temp {
     font-size: 120px;
   }
+
+ .location, .description {
+   font-size: 3rem;
+   
+ }
   
   .wi {
     font-size: 80px;
@@ -14,4 +19,31 @@
   
   .wind-logo {
     font-size: 20px;
+  }
+
+
+  /* Media queries */
+
+  @media screen and (max-width: 578px) {
+    .temp {
+      font-size: 80px;
+    }
+
+    .wi {
+      font-size: 60px;
+    }
+
+    .wind-logo {
+      font-size: 20px;
+    }
+
+    .current-weather {
+      font-size: 15px;
+    }
+ 
+    .location, .description {
+      font-size: calc(2rem + 1vw);
+    }
+
+    
   }

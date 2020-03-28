@@ -24,7 +24,7 @@ const FiveDayWeather = (props) => {
 
 
     return (
-        <div className= 'm-5'>
+        <div className= 'five-day-cards'>
             <div>{getDate(date)}</div>
             <i className = {`wi wi-owm-${icon} logo-sm`}></i>
             <div>{isCelsius ? Math.round(temp) : Math.round(temp_F)}&deg;</div>

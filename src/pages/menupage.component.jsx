@@ -12,11 +12,11 @@ const MainMenu = (props) => {
                 <i className={`wi wi-day-sunny`}></i>
             </div>
 
-            <h2 className='pt-5'>Welcome to the Weather App</h2>
-            <h6 className='pt-3'>Personalise your weather content</h6>
+            <h2 className='pt-5 main-header'>Welcome to the Weather App</h2>
+            <h6 className='pt-3 sub-text'>Personalise your weather content</h6>
             <hr className='break-line'/>
             <form>
-                <h6 className='pt-3'>Show temperature in</h6>
+                <h6 className='pt-3 sub-text'>Show temperature in</h6>
                 <div className='temp-container'>
                     <label className='temp-label'>Fahrenheit: </label>
                     <input className='temp-type-radio' type='radio' value='fahrenheit' name='temp' onClick={handleTempSelection}></input>

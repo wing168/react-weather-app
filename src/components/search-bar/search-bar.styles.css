@@ -9,3 +9,19 @@
     margin-left: 10px;
     font-size: 25px;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 1024px ) {
+    .search-bar {
+        width: 50%;
+       
+    }
+}
+
+@media screen and (max-width: 578px ) {
+    .search-bar {
+        width: 75%;
+    }
+
+}
